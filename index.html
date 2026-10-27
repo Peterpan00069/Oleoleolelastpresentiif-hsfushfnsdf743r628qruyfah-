@@ -6,11 +6,11 @@
 <meta name="description" content="Una sorpresa te está esperando">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#ffd1dc">
-<meta property="og:title" content="Tercera sorpresa">
+<meta property="og:title" content="¡FEEELIIICIIIIDAAAADEEEESSSSS!">
 <meta property="og:description" content="Tienes una sorpresa esperándote…">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎁%3C/text%3E%3C/svg%3E">
-<title>Tercera sorpresa</title>
+<title>¡FEEELIIICIIIIDAAAADEEEESSSSS!</title>
 <style>
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 --text:#6b3a4a;--accent:#ff8fab;--card:rgba(255,255,255,.72)}
@@ -481,7 +481,7 @@ html{--dock:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYF
     <button class="alt fd">🧀 Lasaña</button>
     <button class="alt fd">🫔 Canelones</button>
   </div>
-  <button onclick="go(15)" style="margin-top:10px">Continuar</button>
+
 </section>
 
 <section class="screen qc" id="s15" style="padding:clamp(12px,2.4dvh,24px) 14px;font-size:clamp(15px,2.6dvh,19px)">
@@ -493,7 +493,7 @@ html{--dock:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYF
     <button class="alt fd">💧 Agua</button>
     <button class="alt fd">🥤 Refrescos</button>
   </div>
-  <button onclick="go(16)" style="margin-top:10px">Continuar</button>
+
 </section>
 
 <section class="screen qc" id="s16" style="padding:clamp(12px,2.4dvh,24px) 14px;font-size:clamp(15px,2.6dvh,19px)">
@@ -744,8 +744,8 @@ function confetti(){
     if(t!==s0)swap(s0,t);else if(sel<0){sel=s0;draw()}else if(sel===s0){sel=-1;draw()}else swap(sel,s0)});
   draw();
 })();
-document.querySelectorAll('#foods .fd').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#foods .fd').forEach(x=>x.classList.remove('on'));b.classList.add('on')}));
-document.querySelectorAll('#drinks .fd').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#drinks .fd').forEach(x=>x.classList.remove('on'));b.classList.add('on')}));
+document.querySelectorAll('#foods .fd').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#foods .fd').forEach(x=>x.classList.remove('on'));b.classList.add('on');setTimeout(()=>go(15),280)}));
+document.querySelectorAll('#drinks .fd').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#drinks .fd').forEach(x=>x.classList.remove('on'));b.classList.add('on');setTimeout(()=>go(16),280)}));
 (function(){
   /* Pega aquí la URL de tu formulario (p. ej. URL_DE_FORMSPREE). Vacío = no se envía nada. */
   const ENDPOINT='';
